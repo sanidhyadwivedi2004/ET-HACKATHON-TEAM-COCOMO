@@ -1,0 +1,104 @@
+﻿import json
+
+story_arcs = {
+  "Adani Group Controversy": {
+    "title": "Adani Group: From Hindenburg Crisis to Full Recovery",
+    "description": "The Adani Group story is the most dramatic corporate saga in Indian business history. A single short-seller report wiped out Rs10 lakh crore in 3 days, triggered a Supreme Court probe, and tested the resilience of India's largest infrastructure conglomerate. By 2026, the group has fully recovered and is winning record government contracts.",
+    "currentPhase": "de-escalating",
+    "overallSentiment": 42,
+    "storyScore": 96,
+    "affectedSectors": ["Renewable Energy", "Ports and Logistics", "Cement", "Media"],
+    "mediaAngle": "Most media focuses on the stock price recovery but misses the structural shift - Adani has quietly reduced promoter pledge from 35% to 8%, which is the real indicator of financial health.",
+    "timeline": [
+      {"date": "Jan 24, 2023", "event": "Hindenburg Research publishes 106-page short report - Rs10 lakh crore wiped in 3 days", "significance": "high", "sentiment": "negative", "details": "The report alleged 88 questions about accounting fraud, stock manipulation, and offshore entities."},
+      {"date": "Feb 2, 2023", "event": "Adani Group withdraws Rs20,000 crore FPO citing market conditions", "significance": "high", "sentiment": "negative", "details": "The FPO was fully subscribed but Adani chose to return money to protect investor interests."},
+      {"date": "Mar 2, 2023", "event": "GQG Partners invests .87B - first major institutional confidence signal", "significance": "high", "sentiment": "positive", "details": "Rajiv Jain of GQG called it the most mispriced opportunity he had seen in 30 years."},
+      {"date": "May 2023", "event": "Supreme Court expert committee finds no SEBI regulatory failure", "significance": "high", "sentiment": "positive", "details": "The 6-member committee submitted its report clearing SEBI of any lapses in monitoring Adani stocks."},
+      {"date": "Aug 2023", "event": "Hindenburg attacks SEBI Chairperson Madhabi Puri Buch - allegations denied", "significance": "medium", "sentiment": "negative", "details": "Hindenburg alleged conflict of interest. SEBI and Buch denied all charges. Government backed SEBI chief."},
+      {"date": "Jan 2025", "event": "Hindenburg Research dissolves - founder Nate Anderson cites personal reasons", "significance": "medium", "sentiment": "neutral", "details": "The closure of Hindenburg removed the most vocal critic of the Adani Group."},
+      {"date": "Feb 2026", "event": "Adani Green wins 8 GW SECI tender - largest renewable energy order in India history", "significance": "high", "sentiment": "positive", "details": "The Rs45,000 crore deal cements Adani Green as India's dominant renewable energy player."},
+      {"date": "Mar 2026", "event": "Adani Group market cap crosses Rs20 lakh crore - full recovery complete", "significance": "high", "sentiment": "positive", "details": "GQG Partners investment is now worth 3x. Promoter pledge reduced to 8% from 35%."}
+    ],
+    "keyPlayers": [
+      {"name": "Gautam Adani", "role": "Chairman, Adani Group", "stance": "Led recovery through deleveraging and transparency - reduced group debt by Rs40,000 crore", "influence": "high", "recentAction": "Announced Rs75,000 crore capex plan for green energy and airports in FY27"},
+      {"name": "Rajiv Jain", "role": "CEO, GQG Partners", "stance": "Made the contrarian .87B bet in March 2023 - now sitting on 3x returns", "influence": "high", "recentAction": "Increased GQG stake in Adani Ports by  in Q1 2026"},
+      {"name": "Nate Anderson", "role": "Founder, Hindenburg Research (dissolved)", "stance": "Published the original short report - dissolved firm in January 2025", "influence": "medium", "recentAction": "Dissolved Hindenburg Research citing personal reasons and burnout"},
+      {"name": "Madhabi Puri Buch", "role": "SEBI Chairperson", "stance": "Cleared of conflict of interest allegations - SEBI investigation into Adani ongoing", "influence": "high", "recentAction": "SEBI issued show-cause notice to Adani entities in December 2025 on offshore entity disclosures"},
+      {"name": "Karan Adani", "role": "CEO, Adani Ports", "stance": "Oversaw the most successful business unit - Adani Ports grew revenue 28% in FY26", "influence": "medium", "recentAction": "Signed MOU with Sri Lanka for Colombo port development worth "}
+    ],
+    "sentimentData": [
+      {"period": "Jan 2023", "score": -85, "label": "Hindenburg crisis - panic selling", "event": "Short report published"},
+      {"period": "Mar 2023", "score": -40, "label": "Partial recovery after GQG investment", "event": "GQG invests .87B"},
+      {"period": "Jun 2023", "score": -10, "label": "SC committee clears SEBI", "event": "Expert committee report"},
+      {"period": "Dec 2023", "score": 20, "label": "Steady recovery, debt reduction visible", "event": "Q2 FY24 results beat estimates"},
+      {"period": "Jun 2024", "score": 45, "label": "Strong earnings, new contracts", "event": "Adani Green capacity crosses 10 GW"},
+      {"period": "Dec 2024", "score": 60, "label": "Near full recovery, institutional buying", "event": "Market cap crosses Rs15 lakh crore"},
+      {"period": "Feb 2026", "score": 72, "label": "Record solar tender win", "event": "8 GW SECI tender awarded"},
+      {"period": "Mar 2026", "score": 78, "label": "Full recovery, growth mode", "event": "Market cap crosses Rs20 lakh crore"}
+    ],
+    "contrarian": {
+      "title": "The recovery is built on government contracts - not fundamental business improvement",
+      "argument": "While the stock price has recovered, critics argue that Adani Group growth is entirely dependent on government-awarded contracts rather than competitive market wins. The group has won over Rs2 lakh crore in government tenders since 2023, raising questions about whether this is a genuine business recovery or political patronage.",
+      "evidence": ["85% of Adani Green revenue comes from government PPAs - no market competition", "Adani Airports manages 7 of 8 airports under government concession agreements", "SEBI show-cause notice in December 2025 suggests regulatory issues are not fully resolved"],
+      "credibility": "medium"
+    },
+    "watchNext": [
+      {"signal": "SEBI final order on offshore entity disclosure violations", "probability": "high", "timeframe": "Q2 2026", "implication": "A penalty order could trigger another round of selling - watch for settlement vs contested order"},
+      {"signal": "Adani Green IPO of subsidiary Adani Solar Energy", "probability": "medium", "timeframe": "H2 2026", "implication": "A successful IPO would validate the renewable energy business and unlock value for investors"},
+      {"signal": "GQG Partners stake sale in any Adani company", "probability": "low", "timeframe": "2026-27", "implication": "Any GQG exit would be a major negative signal - they are the anchor institutional investor"},
+      {"signal": "New short-seller report from any firm", "probability": "low", "timeframe": "2026", "implication": "With Hindenburg dissolved, the risk is lower but not zero - Muddy Waters and Gotham City Research are active"}
+    ]
+  },
+  "Paytm Banking Crisis": {
+    "title": "Paytm Payments Bank: How India Biggest Fintech Hit a Regulatory Wall",
+    "description": "Paytm Payments Bank crisis is the defining regulatory story of Indian fintech. RBI action in January 2024 effectively shut down Paytm Payments Bank, wiping out Rs30,000 crore in market cap and forcing a complete business model pivot. The story reveals the tension between fintech innovation and regulatory compliance in India.",
+    "currentPhase": "de-escalating",
+    "overallSentiment": -15,
+    "storyScore": 88,
+    "affectedSectors": ["Fintech", "Digital Payments", "Banking", "Consumer Tech"],
+    "mediaAngle": "Media covered the RBI action extensively but missed the real story: Paytm had been warned 3 times over 2 years about KYC violations and chose to prioritize growth over compliance.",
+    "timeline": [
+      {"date": "Mar 2022", "event": "RBI bars Paytm Payments Bank from onboarding new customers - first warning", "significance": "high", "sentiment": "negative", "details": "RBI cited KYC violations and data localisation concerns. Paytm stock fell 15%."},
+      {"date": "Oct 2023", "event": "RBI conducts special audit of Paytm Payments Bank - findings kept confidential", "significance": "medium", "sentiment": "negative", "details": "The audit reportedly found persistent KYC violations and data sharing with Chinese entities."},
+      {"date": "Jan 31, 2024", "event": "RBI orders Paytm Payments Bank to stop all deposits and credit transactions by Feb 29", "significance": "high", "sentiment": "negative", "details": "The order effectively shut down the banking subsidiary. Paytm stock fell 40% in 2 days."},
+      {"date": "Feb 2024", "event": "Vijay Shekhar Sharma resigns as Paytm Payments Bank chairman", "significance": "high", "sentiment": "negative", "details": "The resignation was seen as an attempt to distance the parent company from the banking subsidiary."},
+      {"date": "Mar 2024", "event": "Paytm migrates payment services to Axis Bank and Yes Bank", "significance": "medium", "sentiment": "neutral", "details": "The migration was completed in 3 weeks - faster than expected. Payment volumes recovered to 80% of pre-crisis levels."},
+      {"date": "Dec 2024", "event": "Paytm reports first quarterly profit since listing - Rs219 crore PAT", "significance": "high", "sentiment": "positive", "details": "The profit was driven by cost cuts and focus on high-margin financial services distribution."},
+      {"date": "Jun 2025", "event": "Paytm stock recovers to Rs700 from Rs300 low - still 60% below IPO price", "significance": "medium", "sentiment": "positive", "details": "Recovery driven by profitability and new RBI-approved payment aggregator license."},
+      {"date": "Jan 2026", "event": "Paytm applies for Small Finance Bank license - new chapter begins", "significance": "high", "sentiment": "positive", "details": "If approved, this would allow Paytm to rebuild its banking business under stricter compliance framework."}
+    ],
+    "keyPlayers": [
+      {"name": "Vijay Shekhar Sharma", "role": "Founder and CEO, Paytm", "stance": "Survived the crisis - pivoted company to profitability but lost banking ambitions", "influence": "high", "recentAction": "Applied for Small Finance Bank license in January 2026"},
+      {"name": "Shaktikanta Das", "role": "RBI Governor", "stance": "Took decisive action citing persistent non-compliance - sent a message to entire fintech sector", "influence": "high", "recentAction": "Approved Paytm payment aggregator license in August 2024"},
+      {"name": "Softbank", "role": "Major Investor (19% stake)", "stance": "Held through the crisis - did not sell despite 70% loss from IPO price", "influence": "medium", "recentAction": "Participated in Paytm ESOP buyback program in Q3 2025"},
+      {"name": "Ant Financial", "role": "Former Investor (exited)", "stance": "Sold entire stake in 2023 amid India-China tensions - crystallised massive loss", "influence": "low", "recentAction": "Fully exited Paytm in 2023 at significant loss"},
+      {"name": "NPCI", "role": "UPI Regulator", "stance": "Allowed Paytm to continue UPI operations through third-party app model", "influence": "high", "recentAction": "Granted Paytm third-party application provider status for UPI in March 2024"}
+    ],
+    "sentimentData": [
+      {"period": "Nov 2021", "score": 30, "label": "IPO at Rs2,150 - India largest IPO", "event": "Paytm IPO"},
+      {"period": "Mar 2022", "score": -20, "label": "First RBI warning - new customer ban", "event": "RBI bars new customers"},
+      {"period": "Jan 2024", "score": -80, "label": "RBI shuts Paytm Payments Bank", "event": "RBI order Jan 31"},
+      {"period": "Mar 2024", "score": -60, "label": "Migration to Axis Bank completed", "event": "Business continuity restored"},
+      {"period": "Jun 2024", "score": -30, "label": "Cost cuts show results", "event": "EBITDA turns positive"},
+      {"period": "Dec 2024", "score": 10, "label": "First quarterly profit since IPO", "event": "Rs219 crore PAT"},
+      {"period": "Jun 2025", "score": 25, "label": "Stock recovery, new licenses", "event": "Payment aggregator license"},
+      {"period": "Jan 2026", "score": 35, "label": "SFB application filed", "event": "New banking ambitions"}
+    ],
+    "contrarian": {
+      "title": "Paytm recovery is a mirage - the core payments business has permanently lost ground to PhonePe and Google Pay",
+      "argument": "While Paytm has achieved accounting profitability, its UPI market share has fallen from 15% to 8% and continues to decline. The payments business is a commodity with zero switching costs. Without a banking license, Paytm cannot build the high-margin lending business that justifies its valuation.",
+      "evidence": ["UPI market share fell from 15% in Jan 2024 to 8% in Jan 2026 - structural loss", "PhonePe and Google Pay now control 85% of UPI transactions between them", "Paytm stock at Rs700 is still 67% below its IPO price of Rs2,150 - investors have not recovered"],
+      "credibility": "high"
+    },
+    "watchNext": [
+      {"signal": "RBI decision on Small Finance Bank license application", "probability": "medium", "timeframe": "H2 2026", "implication": "Approval would be transformational - Paytm could rebuild lending business. Rejection would cap upside permanently."},
+      {"signal": "UPI market share stabilisation above 8%", "probability": "medium", "timeframe": "Q2 2026", "implication": "If share stops falling, it signals Paytm has found its floor and can build from there"},
+      {"signal": "Softbank stake sale below 15%", "probability": "low", "timeframe": "2026", "implication": "Softbank selling would signal loss of confidence in recovery story"},
+      {"signal": "Profitability sustained for 4 consecutive quarters", "probability": "high", "timeframe": "FY27", "implication": "Sustained profitability would re-rate the stock and attract institutional investors"}
+    ]
+  }
+}
+
+with open("lib/demo-story-arcs.json", "w", encoding="utf-8") as f:
+    json.dump(story_arcs, f, indent=2, ensure_ascii=False)
+print("story arcs done")

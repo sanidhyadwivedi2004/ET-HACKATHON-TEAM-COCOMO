@@ -1,0 +1,119 @@
+import json
+
+def j(o): return json.dumps(o, ensure_ascii=False)
+
+# Navigator demo
+nav = {
+  "Union Budget 2026 Impact on Markets": {
+    "headline": "Union Budget 2026: Rs11.1 Lakh Crore Capex Push Reshapes India Growth Trajectory",
+    "executiveSummary": "Finance Minister Nirmala Sitharaman delivered a Rs11.1 lakh crore capital expenditure allocation - a 15% increase over FY25 - focused on infrastructure, green energy, and semiconductor manufacturing. The fiscal deficit target of 4.5% of GDP was maintained, surprising markets that had priced in slippage. Income tax relief for the middle class (zero tax up to Rs12 lakh) is expected to inject Rs1.2 lakh crore into consumption. Bond markets rallied 40bps on fiscal discipline; equity markets hit all-time highs within 48 hours of the budget.",
+    "sentiment": "bullish", "impactLevel": "critical", "impactScore": 94,
+    "dataHighlights": [
+      {"metric": "Capital Expenditure", "value": "Rs11.1 Lakh Cr", "change": "+15% YoY", "trend": "up", "context": "Highest ever capex allocation"},
+      {"metric": "Fiscal Deficit Target", "value": "4.5% of GDP", "change": "Held steady", "trend": "flat", "context": "Better than 4.8% feared"},
+      {"metric": "Tax-Free Income Limit", "value": "Rs12 Lakh", "change": "Up from Rs7 Lakh", "trend": "up", "context": "Boosts middle-class consumption"},
+      {"metric": "Nifty 50 Reaction", "value": "+2.8%", "change": "Day-1 post budget", "trend": "up", "context": "Broad-based rally"}
+    ],
+    "keyPoints": [
+      {"point": "Infrastructure gets Rs4.2 lakh crore - roads, railways, ports", "detail": "The allocation covers 50,000 km of new highways, 200 new railway stations, and 3 new greenfield ports. Private sector is expected to co-invest Rs8 lakh crore under PPP mode.", "significance": "high"},
+      {"point": "Green energy push: Rs35,000 Cr for solar and hydrogen", "detail": "The budget allocates Rs35,000 crore for the National Green Hydrogen Mission and solar manufacturing PLI. India targets 500 GW renewable capacity by 2030.", "significance": "high"},
+      {"point": "Semiconductor Mission gets Rs76,000 Cr top-up", "detail": "The India Semiconductor Mission corpus was increased to Rs76,000 crore, supporting Tata Dholera fab and Micron Sanand plant. First chips expected by Q4 2026.", "significance": "high"},
+      {"point": "MSME credit guarantee scheme expanded to Rs5 Cr", "detail": "The credit guarantee limit for MSMEs was doubled to Rs5 crore, benefiting 63 lakh small businesses. Interest subvention of 2% for exporters was also extended.", "significance": "medium"},
+      {"point": "Customs duty rationalisation hits 35 sectors", "detail": "Import duties were reduced on 35 categories including EV components, medical devices, and solar equipment. This is expected to reduce input costs for manufacturers by 8-12%.", "significance": "medium"}
+    ],
+    "timeline": [
+      {"date": "Feb 1, 2026", "event": "Budget presented - Nifty hits all-time high of 26,277", "impact": "high", "sentiment": "positive"},
+      {"date": "Feb 3, 2026", "event": "Bond yields fall 40bps as fiscal deficit target maintained", "impact": "high", "sentiment": "positive"},
+      {"date": "Feb 10, 2026", "event": "Infrastructure stocks rally 12% - L&T, NTPC, Power Grid lead", "impact": "medium", "sentiment": "positive"},
+      {"date": "Feb 15, 2026", "event": "Opposition raises concerns over disinvestment target of Rs50,000 Cr", "impact": "low", "sentiment": "negative"},
+      {"date": "Mar 1, 2026", "event": "Finance Bill passed with 3 amendments on crypto taxation", "impact": "medium", "sentiment": "neutral"},
+      {"date": "Apr 1, 2026", "event": "New tax regime becomes default - 8 crore taxpayers switch", "impact": "high", "sentiment": "positive"}
+    ],
+    "stakeholders": [
+      {"name": "Nirmala Sitharaman", "role": "Finance Minister", "position": "Architect of the budget - focused on fiscal consolidation while boosting capex", "influence": "high"},
+      {"name": "V. Anantha Nageswaran", "role": "Chief Economic Adviser", "position": "Projected 7.4% GDP growth for FY27, citing budget multiplier effect", "influence": "high"},
+      {"name": "Shaktikanta Das", "role": "RBI Governor", "position": "Welcomed fiscal discipline; hinted at rate cut in April if inflation cooperates", "influence": "high"},
+      {"name": "CII and FICCI", "role": "Industry Bodies", "position": "Praised capex push but demanded faster GST refunds and labour law reforms", "influence": "medium"}
+    ],
+    "marketImplications": ["Infrastructure and Capital Goods", "Banking and NBFCs", "Consumer Discretionary"],
+    "riskFactors": ["Disinvestment target of Rs50,000 Cr appears optimistic given PSU market conditions", "Global commodity price spike could derail fiscal math", "State elections in 5 states may pressure populist spending"],
+    "suggestedQuestions": ["Which sectors benefit most from the Rs11.1 lakh crore capex?", "How does the income tax relief impact consumption stocks?", "What is the realistic disinvestment outlook for FY27?", "How will the budget affect RBI rate cut timeline?", "Which infrastructure companies are best positioned to win contracts?", "What does the semiconductor allocation mean for India chip ambitions?"],
+    "relatedTopics": ["RBI Monetary Policy", "India Infrastructure Stocks", "PLI Scheme Performance", "India Fiscal Deficit History"]
+  },
+  "RBI Rate Cut Cycle": {
+    "headline": "RBI Rate Cut Cycle Begins: 25bps Cut Expected in April 2026 as Inflation Cools to 4.8%",
+    "executiveSummary": "After holding the repo rate at 6.5% for eight consecutive meetings, the Reserve Bank of India is widely expected to begin its rate-cutting cycle in April 2026. CPI inflation has moderated to 4.8% from a peak of 6.7%, and core inflation is at a 4-year low of 3.9%. The MPC voted 4-2 to hold in February, with two members dissenting in favour of an immediate cut. Bond markets have already priced in 75bps of cuts over the next 12 months, with the 10-year G-Sec yield falling to 6.82%.",
+    "sentiment": "bullish", "impactLevel": "high", "impactScore": 88,
+    "dataHighlights": [
+      {"metric": "Current Repo Rate", "value": "6.5%", "change": "Unchanged 8 meetings", "trend": "flat", "context": "Highest since 2019"},
+      {"metric": "CPI Inflation", "value": "4.8%", "change": "Down from 6.7% peak", "trend": "down", "context": "Within RBI 2-6% band"},
+      {"metric": "10-Year G-Sec Yield", "value": "6.82%", "change": "-48bps in 3 months", "trend": "down", "context": "Markets pricing in cuts"},
+      {"metric": "Expected Cuts FY27", "value": "75 bps", "change": "3 cuts of 25bps each", "trend": "down", "context": "Consensus forecast"}
+    ],
+    "keyPoints": [
+      {"point": "Food inflation is the last hurdle - vegetable prices up 28% YoY", "detail": "Tomato and onion prices remain elevated due to erratic monsoon. RBI needs food inflation to cool before cutting. IMD forecasts normal rabi harvest which should ease prices by March.", "significance": "high"},
+      {"point": "Core inflation at 3.9% gives RBI room to act", "detail": "Core inflation excluding food and fuel has fallen to 3.9% - the lowest since 2019. This gives the MPC confidence that demand-side inflation is under control.", "significance": "high"},
+      {"point": "Real rates at 1.7% are restrictive - growth is being sacrificed", "detail": "With repo at 6.5% and CPI at 4.8%, real rates are 1.7% - above the neutral rate of 1-1.2%. This is slowing credit growth and private investment.", "significance": "medium"},
+      {"point": "Fed rate path is the external constraint", "detail": "The US Fed has cut rates twice in 2025. If the dollar weakens further, RBI has more room to cut without risking rupee depreciation.", "significance": "medium"},
+      {"point": "Debt mutual funds are the biggest beneficiary of rate cuts", "detail": "A 75bps rate cut cycle would generate 6-8% capital gains on long-duration debt funds over 12 months, on top of the 7% coupon.", "significance": "high"}
+    ],
+    "timeline": [
+      {"date": "Oct 2023", "event": "RBI raises repo rate to 6.5% - peak of the hiking cycle", "impact": "high", "sentiment": "negative"},
+      {"date": "Feb 2024", "event": "First hold - MPC signals pause as inflation moderates", "impact": "medium", "sentiment": "neutral"},
+      {"date": "Aug 2025", "event": "Two MPC members vote for cut - dissent signals shift in stance", "impact": "high", "sentiment": "positive"},
+      {"date": "Dec 2025", "event": "Stance changed from withdrawal of accommodation to neutral", "impact": "high", "sentiment": "positive"},
+      {"date": "Feb 2026", "event": "Hold maintained but April cut strongly signalled by Governor", "impact": "medium", "sentiment": "positive"},
+      {"date": "Apr 2026", "event": "Expected: First 25bps cut - repo rate to 6.25%", "impact": "high", "sentiment": "positive"}
+    ],
+    "stakeholders": [
+      {"name": "Shaktikanta Das", "role": "RBI Governor", "position": "Signalled April cut if inflation cooperates - last mile of disinflation is the hardest", "influence": "high"},
+      {"name": "Michael Patra", "role": "Deputy Governor Monetary Policy", "position": "Hawkish - voted to hold in last 3 meetings, concerned about food inflation persistence", "influence": "high"},
+      {"name": "Ashima Goyal", "role": "External MPC Member", "position": "Dovish - has voted for cut in last 2 meetings, argues real rates are too restrictive", "influence": "medium"},
+      {"name": "SBI and HDFC Bank", "role": "Large Banks", "position": "Waiting for RBI cut to reduce MCLR - home loan rates expected to fall 50bps by Dec 2026", "influence": "medium"}
+    ],
+    "marketImplications": ["Long-Duration Debt Funds", "Banking and Housing Finance", "Rate-Sensitive Sectors Auto and Realty"],
+    "riskFactors": ["El Nino impact on kharif crop could spike food inflation again", "Crude oil above $90 per barrel would widen CAD and weaken rupee", "US Fed reversing course on cuts would constrain RBI room"],
+    "suggestedQuestions": ["Which debt mutual fund categories benefit most from rate cuts?", "How will rate cuts affect home loan EMIs?", "What is the impact on banking sector NIMs?", "Should I lock in FD rates now before cuts begin?", "How does RBI rate cut affect the rupee?", "Which sectors see the biggest earnings upgrade in a rate-cut cycle?"],
+    "relatedTopics": ["India Inflation Trends", "Debt Mutual Funds", "Home Loan Market", "RBI Monetary Policy History"]
+  },
+  "Adani Group Controversy": {
+    "headline": "Adani Group: From Hindenburg Crisis to Rs20 Lakh Crore Recovery - The Full Story",
+    "executiveSummary": "The Adani Group has staged one of the most remarkable corporate recoveries in Indian history. After the Hindenburg Research short-seller report in January 2023 wiped out Rs10 lakh crore in market cap, the group has rebuilt to Rs20 lakh crore by March 2026. The Supreme Court-appointed expert committee found no regulatory failure by SEBI. GQG Partners invested $1.87 billion in March 2023, signalling institutional confidence. The group has since won India largest solar tender, completed the Ambuja Cements acquisition, and launched Adani Green Energy bonds oversubscribed 3x.",
+    "sentiment": "mixed", "impactLevel": "high", "impactScore": 91,
+    "dataHighlights": [
+      {"metric": "Market Cap Recovery", "value": "Rs20 Lakh Cr", "change": "From Rs8 Lakh Cr low", "trend": "up", "context": "Full recovery from Hindenburg crisis"},
+      {"metric": "GQG Investment", "value": "$1.87B", "change": "March 2023", "trend": "up", "context": "Largest single FII bet on Adani"},
+      {"metric": "Adani Green Capacity", "value": "28 GW", "change": "+8 GW SECI win", "trend": "up", "context": "Largest renewable energy order book"},
+      {"metric": "Debt/EBITDA Ratio", "value": "3.2x", "change": "Down from 7.6x in 2023", "trend": "down", "context": "Significant deleveraging achieved"}
+    ],
+    "keyPoints": [
+      {"point": "Hindenburg report alleged stock manipulation and accounting fraud", "detail": "The January 2023 report by Hindenburg Research alleged 88 questions about Adani Group accounting, offshore entities, and stock price manipulation. The group denied all allegations.", "significance": "high"},
+      {"point": "Supreme Court committee found no SEBI regulatory failure", "detail": "The expert committee appointed by the Supreme Court in March 2023 submitted its report in May 2023, finding no evidence of regulatory failure by SEBI in monitoring Adani stocks.", "significance": "high"},
+      {"point": "GQG Partners bet proved prescient - 3x returns in 3 years", "detail": "GQG Partners invested $1.87 billion across 4 Adani companies in March 2023 at crisis lows. By March 2026, the investment is worth approximately $5.6 billion - a 3x return.", "significance": "high"},
+      {"point": "Adani Green wins 8 GW solar tender - largest in Indian history", "detail": "In February 2026, Adani Green Energy won a Rs45,000 crore SECI tender for 8 GW of solar capacity, the largest single renewable energy award in India history.", "significance": "high"},
+      {"point": "Debt reduction of Rs40,000 crore achieved through asset monetisation", "detail": "The group sold stakes in Adani Ports, Adani Enterprises, and Adani Total Gas to reduce debt by Rs40,000 crore. Debt/EBITDA has fallen from 7.6x to 3.2x.", "significance": "medium"}
+    ],
+    "timeline": [
+      {"date": "Jan 24, 2023", "event": "Hindenburg Research publishes short-seller report - Rs10 lakh crore wiped out in 3 days", "impact": "high", "sentiment": "negative"},
+      {"date": "Feb 2, 2023", "event": "Adani Group withdraws Rs20,000 crore FPO citing market volatility", "impact": "high", "sentiment": "negative"},
+      {"date": "Mar 2, 2023", "event": "GQG Partners invests $1.87 billion - first major institutional vote of confidence", "impact": "high", "sentiment": "positive"},
+      {"date": "May 2023", "event": "Supreme Court expert committee finds no SEBI regulatory failure", "impact": "high", "sentiment": "positive"},
+      {"date": "Dec 2024", "event": "Adani Group market cap crosses Rs15 lakh crore - near full recovery", "impact": "medium", "sentiment": "positive"},
+      {"date": "Feb 2026", "event": "Adani Green wins 8 GW SECI tender - largest renewable energy order in India history", "impact": "high", "sentiment": "positive"}
+    ],
+    "stakeholders": [
+      {"name": "Gautam Adani", "role": "Chairman, Adani Group", "position": "Led the recovery strategy - focused on deleveraging, transparency, and winning government contracts", "influence": "high"},
+      {"name": "Rajiv Jain", "role": "CEO, GQG Partners", "position": "Made the contrarian bet in March 2023 - now sitting on 3x returns and vindicated", "influence": "high"},
+      {"name": "Madhabi Puri Buch", "role": "SEBI Chairperson", "position": "Faced allegations of conflict of interest from Hindenburg in August 2023 - denied all charges", "influence": "high"},
+      {"name": "Hindenburg Research", "role": "Short Seller", "position": "Dissolved in January 2025 - founder Nate Anderson cited personal reasons", "influence": "medium"}
+    ],
+    "marketImplications": ["Renewable Energy Sector", "Infrastructure and Ports", "Cement and Materials"],
+    "riskFactors": ["SEBI investigation into Hindenburg allegations still technically open", "High leverage in new green energy projects creates refinancing risk", "Political risk - group heavily dependent on government contracts"],
+    "suggestedQuestions": ["Is Adani Group stock safe to invest in now?", "What was the actual substance of the Hindenburg allegations?", "How did GQG Partners identify the opportunity in March 2023?", "What is Adani Group debt situation today?", "Which Adani companies have the strongest fundamentals?", "What is the risk of another short-seller attack?"],
+    "relatedTopics": ["India Renewable Energy", "SEBI Investigations", "Short Selling in India", "India Infrastructure Stocks"]
+  }
+}
+
+with open("lib/demo-navigator.json", "w", encoding="utf-8") as f:
+    json.dump(nav, f, indent=2, ensure_ascii=False)
+print("navigator done")

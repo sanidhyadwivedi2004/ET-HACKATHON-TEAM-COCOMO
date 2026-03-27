@@ -1,0 +1,31 @@
+﻿{
+  "videoTitle": "Reliance Q4 FY26: Record Profit, Jio Hits 200M 5G Users",
+  "runningTime": "90 seconds",
+  "targetAudience": "Business professionals and retail investors tracking Reliance Industries",
+  "thumbnailHeadline": "RELIANCE SHATTERS RECORDS",
+  "openingHook": "India biggest company just posted its highest-ever quarterly profit — and the number will surprise you.",
+  "segments": [
+    {"segmentNumber":1,"type":"hook","duration":"10s","narrationScript":"India biggest company just posted its highest-ever quarterly profit of Rs21,243 crore. That is more than the GDP of some Indian states — in just three months.","visualTreatment":"Full-screen animated counter ticking up to Rs21,243 Cr against dark background with Reliance logo","dataOverlay":"Rs21,243 Cr | Q4 FY26 Net Profit","bRoll":"Reliance Industries headquarters in Mumbai, stock ticker showing RIL","musicMood":"dramatic","wordCount":32},
+    {"segmentNumber":2,"type":"context","duration":"20s","narrationScript":"Reliance Industries — the company behind Jio, Reliance Retail, and one of Asia largest oil refineries — reported revenue of Rs2.6 lakh crore for the quarter. That is a 14% jump from last year. The star performer? Jio, which crossed 200 million 5G subscribers — a milestone no telecom company in the world has hit this fast.","visualTreatment":"Split screen: Jio 5G tower on left, Reliance Retail store on right. Animated revenue bar chart building up","dataOverlay":"Revenue: Rs2.6 Lakh Cr | Jio 5G Users: 200M","bRoll":"Jio 5G rollout footage, Reliance Retail stores, refinery operations","musicMood":"informative","wordCount":68},
+    {"segmentNumber":3,"type":"data","duration":"20s","narrationScript":"Let us break down where the money came from. Oil-to-chemicals contributed 42% of EBITDA. Jio added 28%. Retail brought in 22%. And the new green energy business, still in early stages, contributed 8%. The key takeaway: Reliance is no longer just an oil company. Digital and retail now drive half the profits.","visualTreatment":"Animated pie chart building segment by segment with color coding for each business","dataOverlay":"O2C: 42% | Jio: 28% | Retail: 22% | Green: 8%","bRoll":"Oil refinery, Jio offices, retail stores, solar panels","musicMood":"informative","wordCount":72},
+    {"segmentNumber":4,"type":"analysis","duration":"25s","narrationScript":"What does this mean for investors? Reliance stock has returned 18% in the last 12 months, outperforming the Nifty 50 by 6 percentage points. Analysts at Morgan Stanley have a target price of Rs3,200 — 15% upside from current levels. The big catalyst to watch: the Jio IPO, which Mukesh Ambani has hinted could happen in FY28. When Jio lists separately, it could be valued at Rs8-10 lakh crore on its own.","visualTreatment":"Stock price chart with 12-month performance vs Nifty. Analyst target price displayed prominently","dataOverlay":"RIL 12M Return: +18% | Analyst Target: Rs3,200 | Jio Standalone Value: Rs8-10 Lakh Cr","bRoll":"BSE trading floor, analyst reports, Mukesh Ambani at AGM","musicMood":"optimistic","wordCount":88},
+    {"segmentNumber":5,"type":"cta","duration":"15s","narrationScript":"The bottom line: Reliance is firing on all cylinders. Record profit, record 5G subscribers, and a potential Jio IPO on the horizon. For the full analysis including what this means for your portfolio, head to ET Markets. I am Priya Sharma, and this is ET Now.","visualTreatment":"ET Now logo animation, anchor sign-off with lower third. QR code to ET Markets article","dataOverlay":null,"bRoll":"ET Now studio, anchor close-up","musicMood":"neutral","wordCount":55}
+  ],
+  "keyStats": [
+    {"label":"Net Profit Q4 FY26","value":"Rs21,243 Cr","context":"Highest ever quarterly profit for any Indian company","displayFormat":"Large counter animation"},
+    {"label":"Revenue","value":"Rs2.6 Lakh Cr","context":"14% YoY growth driven by all segments","displayFormat":"Bar chart vs last year"},
+    {"label":"Jio 5G Subscribers","value":"200 Million","context":"Fastest 5G ramp-up globally","displayFormat":"Milestone badge animation"},
+    {"label":"Stock Return 12M","value":"+18%","context":"Outperformed Nifty 50 by 6 percentage points","displayFormat":"Line chart vs benchmark"}
+  ],
+  "graphicsPackage": [
+    {"type":"lower-third","content":"Reliance Industries Q4 FY26 Results | Net Profit: Rs21,243 Cr","timing":"Throughout segment 1 and 2"},
+    {"type":"full-screen-graphic","content":"Business segment EBITDA breakdown pie chart","timing":"During segment 3 data section"},
+    {"type":"ticker","content":"RIL | Rs2,780 | +2.4% | 52W High: Rs2,890","timing":"Bottom of screen throughout"}
+  ],
+  "socialCuts": [
+    {"platform":"Instagram Reels","duration":"30s","angle":"Focus on the Jio 5G milestone - 200M subscribers is the most shareable stat"},
+    {"platform":"YouTube Shorts","duration":"60s","angle":"Full profit breakdown with the Jio IPO angle as the hook - higher engagement for investor audience"}
+  ],
+  "tags": ["Reliance","Q4Results","Jio5G","MukeshAmbani","ETNow"],
+  "estimatedReach": "2-5 lakh views on ET Now YouTube within 48 hours based on Reliance content historical performance"
+}
